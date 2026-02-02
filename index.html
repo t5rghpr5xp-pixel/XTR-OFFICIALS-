@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTR OFFICIALS | Pro Tournament</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff4d4d; 
+            --dark: #000000;
+            --card-bg: #111111;
+            --text: #ffffff;
+            --accent: #ffffff;
+        }
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: var(--dark);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-image: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+        }
+
+        header {
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .main-logo {
+            width: 150px;
+            filter: drop-shadow(0 0 10px var(--primary));
+            margin-bottom: 15px;
+        }
+
+        h1 { font-size: 2.8rem; margin: 0; letter-spacing: 3px; color: var(--accent); text-transform: uppercase; }
+        .subtitle { color: var(--primary); font-size: 1rem; letter-spacing: 2px; margin-top: 5px; }
+
+        .container { padding: 20px; max-width: 600px; margin: auto; }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .nav-btn {
+            background: #222;
+            color: white;
+            padding: 15px;
+            display: block;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--primary);
+            text-align: left;
+        }
+
+        .status-badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            float: right;
+            text-transform: uppercase;
+        }
+
+        .live { background: var(--primary); color: white; animation: blink 1s infinite; }
+        @keyframes blink { 0% {opacity: 1;} 50% {opacity: 0.5;} 100% {opacity: 1;} }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { background: #333; padding: 10px; color: var(--primary); text-align: left; }
+        td { padding: 12px; border-bottom: 1px solid #222; text-align: left; }
+
+        .footer { padding: 40px; opacity: 0.5; font-size: 0.8rem; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://i.ibb.co/v4mKxYp/xtr-logo.png" alt="XTR LOGO" class="main-logo">
+        <h1>XTR OFFICIALS</h1>
+        <div class="subtitle">TOURNAMENT MANAGEMENT</div>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2 style="margin-top:0; color:var(--primary);">🔥 REGISTRATION</h2>
+            <p>Send your team squad to join XTR Tournaments.</p>
+            <a href="https://wa.me/923197607373" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> JOIN VIA WHATSAPP
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>📅 MATCH SCHEDULE</h2>
+            <div class="nav-btn">🕒 09:00 PM - Erangel <span class="status-badge live">Live</span></div>
+            <div class="nav-btn">🕒 09:45 PM - Miramar <span class="status-badge" style="background:#555">Waiting</span></div>
+            <div class="nav-btn">🕒 10:30 PM - Rondo <span class="status-badge" style="background:#555">Upcoming</span></div>
+        </div>
+
+        <div class="card">
+            <h2>🏆 TOP FRAGGERS</h2>
+            <table>
+                <tr><th>PLAYER</th><th>TEAM</th><th>KILLS</th></tr>
+                <tr><td>XTR Max</td><td>ALPHA</td><td>15</td></tr>
+                <tr><td>Silent-JS</td><td>OPS</td><td>12</td></tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 XTR MANAGEMENT PAKISTAN</p>
+    </div>
+
+</body>
+</html>
